@@ -12,5 +12,9 @@ router.get("/todos", todoController.getTodos);
 
 router.post("/todos", todoController.createTodo);
 
+router.put("/todos/:todoId", todoController.updateTodo);
+
+router.delete("/todos/:todoId", todoController.deleteTodo);
+
 // Exports
 module.exports = router;
