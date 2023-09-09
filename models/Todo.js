@@ -6,7 +6,7 @@ const todoSchema = new mongoose.Schema({
 	completed: Boolean,
 	date: {
 		type: Date,
-		default: Date.now(), // Sets default value to current date and time
+		default: Date.now, // Sets default value to current date and time
 	},
 });
 
