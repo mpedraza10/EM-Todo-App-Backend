@@ -1,5 +1,6 @@
 // Imports
 const express = require("express");
+const cors = require("cors");
 
 // DB
 const connectDB = require("./data/database");
@@ -10,6 +11,9 @@ const todoRoutes = require("./routes/todo.routes");
 // Initialization
 const app = express();
 const PORT = process.env.PORT || 5001;
+
+// Cors middleware
+app.use(cors());
 
 // Establish db connection
 connectDB();
