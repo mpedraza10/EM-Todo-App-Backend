@@ -25,7 +25,7 @@ app.use(express.urlencoded({ extended: false }));
 app.use(express.json());
 
 // Middleware to handle routes
-app.use(todoRoutes);
+app.use("/api", todoRoutes);
 
 // Running
 app.listen(PORT, () => console.log(`Server running on port ${PORT}`));
